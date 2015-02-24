@@ -1,0 +1,7 @@
+Brad 87 45.8 100
+Alice 21 11 12
+Greg 23 88 32
+Bonnie 83 92.8311 88
+Jeannie 77 77.77 77.77
+Roberta 98 92 100
+Cora 95 94.923 90
