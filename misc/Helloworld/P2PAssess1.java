@@ -12,8 +12,8 @@ class P2PAssess1{
      {
      double currentH = x[i][0];
      double currentL = x[i][1];
-     x[i+1][0] = x[i][0]+(x[i][0]*a[0])-(x[i][0]*a[1]*currentL);
-     x[i+1][1] = x[i][1]+(x[i][1]*b[0])-(x[i][1]*b[1]*currentH);
+     x[i+1][0] = currentH*(1+a[0]-(a[1]*currentL));
+     x[i+1][1] = currentL*(1-b[0]+(b[1]*currentH));
      } 	
     double result[] = {x[n][0],x[n][1]};
     return result;
@@ -32,7 +32,7 @@ class P2PAssess1{
 	b[0] = 0.01;
 	b[1] = 0.00002;
 
-	n = 1;
+	n = 20;
 	preyPred[0] = 300;
 	preyPred[1] = 20;
 
@@ -41,7 +41,7 @@ class P2PAssess1{
 			   +"Snowhares: "+preyPred[0]
 			   +" Lynx: "+preyPred[1]);
 
-	n = 2;
+	n = 100;
 	preyPred[0] = 300;
 	preyPred[1] = 20;
 
@@ -50,7 +50,7 @@ class P2PAssess1{
 			   +"Snowhares: "+preyPred[0]
 			   +" Lynx: "+preyPred[1]);
 	
-	n = 20;
+	n = 200;
 	preyPred[0] = 300;
 	preyPred[1] = 20;
 
